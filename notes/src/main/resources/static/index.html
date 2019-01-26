@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.4.6/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Notatnik</title>
+</head>
+
+<body>
+    <div class="row container">
+        <header>
+            <h1>Notatnik</h1>
+            <div class="row logout">
+                <!--
+                <p class="col username">user</p>
+                <button type="button" class="col btn-big logout-btn">
+                    <i class="ion-ios-log-out"></i>
+                </button>
+                -->
+            </div>
+        </header>
+
+        <div class="col span-1-of-3 notes">
+            <form class="row search">
+                <input type="text" class="col search-field" placeholder="Tytuł...">
+                <input type="date" class="col search-field date-search-field">
+                <button class="btn search-btn">
+                    <span>Szukaj</span>
+                </button>
+            </form>
+            <div class="row">
+                <ul class="notes-list">
+                    <!--
+                    <li>
+                        <div class="note-link" id="note_id">
+                            <div>
+                                <h3 class="notes-title">title</h3>
+                                <p class="notes-date">date</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="note-link" id="note_id">
+                            <div>
+                                <h3 class="notes-title">title</h3>
+                                <p class="notes-date">date</p>
+                            </div>
+                        </div>
+                    </li>
+                    -->
+                </ul>
+            </div>
+
+            <div class="notes-pages">
+                <!--
+                <button type="button" class="btn-small page-prev" data-goToPage=>
+                    <i class="ion-ios-arrow-dropleft-circle"></i>
+                </button>
+                <button type="button" class="btn-small page-next" data-goToPage=>
+                    <i class="ion-ios-arrow-dropright-circle"></i>
+                </button>
+                -->
+            </div>
+        </div>
+
+
+        <div class="col span-2-of-3 note">
+
+            <div class="row note-buttons">
+                <!--
+                <button class="btn-small user-login">
+                    <i class="ion-ios-person"></i>
+                </button>
+                -->
+                <button type="button" class="btn-small user-add">
+                    <i class="ion-ios-person-add"></i>
+                </button>
+                <!--
+                <button class="btn-small note-add">
+                    <i class="ion-ios-add-circle"></i>
+                </button>
+                <button class="btn-small note-delete">
+                    <i class="ion-ios-close-circle"></i>
+                </button>
+                <button class="btn-small note-edit">
+                    <i class="ion-ios-create"></i>
+                </button>
+                -->
+            </div>
+
+            
+            <form class="row register-form">
+                <!--
+                <div class="row form-row">
+                    <div class="col form-label">
+                        <label>Nazwa</label>
+                    </div>
+                    <div class="col form-field">
+                        <input type="text" id="nick-id" placeholder="Nazwa...">
+                    </div>
+                </div>
+                <div class="row form-row">
+                    <div class="col form-label">
+                        <label>Hasło</label>
+                    </div>
+                    <div class="col form-field">
+                        <input type="password" id="password-id" placeholder="Hasło...">
+                    </div>
+                </div>
+                <div class="row form-row">
+                    <div class="col form-label">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="col form-field">
+                        <button class="btn login-btn">
+                            <span>Zarejestruj</span>
+                        </button>
+                    </div>
+                </div>
+                -->
+            </form>
+            
+
+            <form class="row login-form">
+                <!--
+                <div class="row">
+                    <p class="error">message</p>
+                </div>
+                -->
+                <div class="row form-row">
+                    <div class="col form-label">
+                        <label>Nazwa</label>
+                    </div>
+                    <div class="col form-field">
+                        <input type="text" id="nick-id" placeholder="Nazwa...">
+                    </div>
+                </div>
+                <div class="row form-row">
+                    <div class="col form-label">
+                        <label>Hasło</label>
+                    </div>
+                    <div class="col form-field">
+                        <input type="password" id="password-id" placeholder="Hasło...">
+                    </div>
+                </div>
+                <div class="row form-row">
+                    <div class="col form-label">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="col form-field">
+                        <button class="btn login-btn">
+                            <span>Zaloguj</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            
+            <form class="row note-form">
+                <!--
+                <div class="row form-row">
+                    <div class="col form-label">
+                        <label>Tytuł</label>
+                    </div>
+                    <div class="col form-field">
+                        <input type="text" id="title-id" placeholder="Tytuł...">
+                    </div>
+                </div>
+                <div class="row form-row">
+                    <div class="col form-label">
+                        <label>Data</label>
+                    </div>
+                    <div class="col form-field">
+                        <input type="date" id="date-id">
+                    </div>
+                </div>
+                <div class="row form-row">
+                    <div class="col form-label">
+                        <label>Treść</label>
+                    </div>
+                    <div class="col form-field">
+                        <textarea form="note-form" id="text-id" rows="7" placeholder="Treść..."></textarea>
+                    </div>
+                </div>
+                <div class="row form-row">
+                    <div class="col form-label">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="col form-field">
+                        <button class="btn add-btn">
+                            <span id="AddUpdate">Zapisz</span>
+                        </button>
+                    </div>
+                </div>
+                -->
+            </form>
+            
+            <div class="row note-show">
+                <!--
+                <h2 class="row note-title">title</h2>
+                <p class="row note-date">date</p>
+                <div class="row note-content">
+                    <p class="note-text">
+                        text
+                    </p>
+                </div>
+                -->
+            </div>
+        </div>
+
+
+        <div class="col span-3-of-3 censorship">
+            <h2 class="col censorship-header">Cenzura</h2>
+            <div class="col censorship-add">
+                <button type="button" class="btn-small censorship-add-btn">
+                    <i class="ion-ios-add-circle"></i>
+                </button>
+            </div>
+            <div class="col censorship-show">
+                <button type="button" class="btn-small censorship-show-btn">
+                    <i class="ion-ios-arrow-dropdown-circle"></i>
+                </button>
+            </div>
+
+            <form class="row censor">
+                <!--
+                <input type="text" class="col censor-field" id="censor-id" placeholder="Zwrot...">
+                <button class="col censor-btn">
+                    <span>Dodaj</span>
+                </button>
+                -->
+            </form>
+
+            <ul class="censor-list">
+                <!--
+                <li class="censor-item" id="phrase_censoredPhrase"">
+                    <div class="censor-word">
+                        <p>censoredPhrase</p>
+                    </div>
+                    <div class="censor-delete">
+                        <button type="button" class="btn-small delete-btn">
+                            <i class="ion-ios-close-circle"></i>
+                        </button>
+                    </div>
+                </li>
+                <li class="censor-item" id="phrase_censoredPhrase"">
+                    <div class="censor-word">
+                        <p>censoredPhrase</p>
+                    </div>
+                    <div class="censor-delete">
+                        <button type="button" class="btn-small delete-btn">
+                            <i class="ion-ios-close-circle"></i>
+                        </button>
+                    </div>
+                </li>
+                -->
+            </ul>
+        </div>
+    </div>
+<script type="text/javascript" src="js/bundle.js"></script></body>
+
+</html>

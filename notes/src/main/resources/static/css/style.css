@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-image: linear-gradient(to right bottom, #ddf5cc, #10ac84);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #555555;
+    font-family: 'Nunito Sans', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 62.5%;
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+}
+
+.row {
+    zoom: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row:before,
+.row:after {
+    content:"";
+    display:table;
+}
+.row:after {
+    clear:both;
+}
+
+.col {
+	display: block;
+	float:left;
+	margin: 0;
+}
+
+.span-3-of-3 {
+    width: 20%;
+}
+
+.span-2-of-3 {
+    width: 50%; 
+}
+
+.span-1-of-3 {
+    width: 30%; 
+}
+
+.container {
+    min-height: 800px;
+    margin: 80px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 15px 45px 2px rgba(87, 77, 74, 0.3);
+}
+
+header {
+    margin: 0;
+    background-color: #f3f9f5;
+}
+
+h1 {
+    font-size: 350%;
+    font-weight: 700;
+    color: #10ac84;
+    text-transform: uppercase;
+    padding: 20px 0;
+    text-align: center;
+    transform: skewY(-3deg);
+}
+
+.logout{
+    float: right;
+    position: relative;
+    top: -70px;
+    right: 40px;
+}
+
+.username {
+    font-size: 140%;
+    margin: 10px 10px 0 0;
+    color: #10ac84;
+}
+
+.btn {
+    outline: none;
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    background-color: #10ac84;
+    border: 1px solid #10ac84;
+    color: #ffffff;
+    width: auto;
+    transition: background-color 0.2s, border 0.2s;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #0d8d6c;
+    border: 1px solid #0d8d6c;
+}
+
+.search {
+    padding: 30px 22px;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.search-field {
+    width: 54%;
+    margin: 0 7% 0 3%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 2%;
+    border-radius: 3px;
+    font-size: 148%;
+    transition: border 0.2s;
+}
+
+.search-field:first-child {
+    margin-bottom: 5px;
+}
+
+.search-field:focus {
+    border: 1px solid #10ac84;
+}
+
+.search-btn {
+    width: 36%;
+    margin-top: 14px; 
+}
+
+.error {
+    text-align: center;
+    font-size: 140%;
+    color: #d63031;
+}
+
+.notes-list {
+    list-style: none;
+}
+
+.note-link {
+    cursor: pointer;
+}
+
+.note-link,
+.note-link:link,
+.note-link:visited {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    transition: all .3s;
+    border-bottom: 1px solid #d5d5d5;
+    text-decoration: none;
+}
+
+.note-link:hover {
+    background-color: #f3f9f5;
+}
+
+.note-link-active {
+    background-color: #f3f9f5;
+    border-right: 1px solid #fff;
+}
+
+.notes-title {
+    font-size: 130%;
+    color: #10ac84;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.notes-date {
+    font-size: 110%;
+    color: #888;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.notes-pages {
+    margin-top: 30px;
+    padding: 0 30px;
+}
+
+.btn-small,
+.btn-big {
+    color: #888;
+    font-size: 250%;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.btn-big {
+    font-size: 400%;
+    background-color: inherit;
+}
+
+.btn-small:hover,
+.btn-big:hover {
+    color: #10ac84;
+}
+
+.btn-small:focus,
+.btn-big:focus {
+    outline: none;
+}
+
+.page-prev {
+    margin-left: 20px;
+    float: left;
+    flex-direction: row-reverse;
+}
+
+.page-next {
+    margin-right: 20px;
+    float: right;
+}
+
+.notes-pages::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.notes-pages {
+    padding-bottom: 30px;
+}
+
+.note {
+    background-color: #f3f9f5;
+    border-top: 1px solid #fff;
+    padding-bottom: 30px;
+}
+
+.note-title {
+    color: #10ac84;
+    font-weight: 700;
+    font-size: 200%;
+    text-transform: uppercase;
+    width: 70%;
+    text-align: center;
+}
+
+.note-date {
+    font-size: 128%;
+    color: #888;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+}
+
+.note-content {
+    padding: 30px 30px 30px 0;
+}
+
+.note-text {
+    font-size: 150%;
+    font-weight: 400;
+    padding: 0 50px;
+}
+
+.censorship h2 {
+    font-size: 180%;
+    font-weight: 600;
+    color: #10ac84;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.censorship-add-btn {
+    margin: 20px 0;
+}
+
+.censorship-show-btn {
+    padding-right: 10px;
+    margin: 20px 0;
+}
+
+.censorship-header {
+    width: 74%;
+}
+
+.censorship-add {
+    width: 10%; 
+}
+
+.censorship-show {
+    width: 16%; 
+}
+
+.censor {
+    padding: 0 15px 15px 15px;
+}
+
+.censor-field {
+    width: 60%; 
+    margin-right: 2%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 2%;
+    border-radius: 3px;
+    font-size: 130%;
+    transition: border 0.2s;
+}
+
+.censor-field:focus {
+    border: 1px solid #10ac84;
+}
+
+.censor-btn {
+    width: 38%; 
+    outline: none;
+    display: inline-block;
+    padding: 5px 15px;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 50px;
+    background-color: #10ac84;
+    border: 1px solid #10ac84;
+    color: #ffffff;
+    transition: background-color 0.2s, border 0.2s;
+}
+
+.censor-btn:hover,
+.censor-btn:active {
+    background-color: #0d8d6c;
+    border: 1px solid #0d8d6c;
+}
+
+.censor-list {
+    padding:  15px;
+    list-style: none;
+}
+
+.censor-item {
+    padding: 3px 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+
+.censor-item:hover .censor-delete {
+    opacity: 1;
+    visibility: visible;
+}
+
+.censor-word {
+    padding-top: 4px;
+    font-size: 130%;
+}
+
+.censor-delete {
+    position: absolute;
+    right: 2%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s;
+}
+
+.note-form {
+    margin-top: 30px;
+}
+
+.form-row {
+    margin: 14px 40px 0 40px;
+}
+
+.form-label,
+.form-field {
+    font-size: 150%;
+}
+
+.form-label {
+    width: 20%;
+    font-weight: 400;
+}
+
+.form-label label {
+    padding: 5px 12px 5px 0;
+    float: right;
+}
+
+.form-field {
+    width: 80%;
+}
+
+.form-field input,
+.form-field textarea {
+    width: 84%;
+    max-width: 84%;
+    min-width: 84%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 2%;
+    border-radius: 3px;
+    font-family: inherit;
+    transition: border 0.2s;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+    border: 1px solid #10ac84;
+}
+
+.note-edit,
+.note-add,
+.note-delete,
+.user-add,
+.user-login {
+    background-color: inherit;
+    float: right;
+    margin: 20px 20px 20px 10px;
+}
+
+.note-edit,
+.note-delete {
+    margin-right: 0;
+}
+
+.login-btn {
+    margin-bottom: 20px;
+}
